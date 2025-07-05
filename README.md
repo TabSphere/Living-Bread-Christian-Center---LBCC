@@ -3,9 +3,9 @@
 A modern, responsive church website built with Vite and Tailwind CSS, designed to spread the Word of God globally.
 
 ## Features
-- Sermon streaming (YouTube)
+- Sermon streaming (Facebook)
 - Prayer wall and contact forms
-- Donation support (PayPal/Tithe.ly)
+- Donation support (PayPal/Bank Transfer)
 - Mobile-optimized design
 - Tailwind CSS styling
 - Vite for lightning-fast performance
@@ -16,7 +16,7 @@ A modern, responsive church website built with Vite and Tailwind CSS, designed t
 - Tailwind CSS
 - Git + GitHub
 
-## 📍 Contact
+## Contact
 Email: lbcc5005@gmail.com  
 Location: London, UK  
 [YouTube Channel](https://youtube.com/channel/UCSh80T03nWjheSKAFwiZjow)
