@@ -1,8 +1,8 @@
-# Living Bread Christian Centre – LBCC 🌍✝️
+# Living Bread Christian Centre – LBCC 
 
 A modern, responsive church website built with Vite and Tailwind CSS, designed to spread the Word of God globally.
 
-## 🌟 Features
+## Features
 - Sermon streaming (YouTube)
 - Prayer wall and contact forms
 - Donation support (PayPal/Tithe.ly)
@@ -10,17 +10,17 @@ A modern, responsive church website built with Vite and Tailwind CSS, designed t
 - Tailwind CSS styling
 - Vite for lightning-fast performance
 
-## 🛠 Tech Stack
+## Tech Stack
 - Vite
 - React
 - Tailwind CSS
 - Git + GitHub
 
 ## 📍 Contact
-📧 Email: lbcc5005@gmail.com  
-📍 Location: London, UK  
-📺 [YouTube Channel](https://youtube.com/channel/UCSh80T03nWjheSKAFwiZjow)
+Email: lbcc5005@gmail.com  
+Location: London, UK  
+[YouTube Channel](https://youtube.com/channel/UCSh80T03nWjheSKAFwiZjow)
 
 ---
 
-**To God be the glory! 🙌**
+**To God be the glory!**
