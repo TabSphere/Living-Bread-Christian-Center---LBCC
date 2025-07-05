@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --church-blue: #002F6C;
+  --church-brown: #704214;
+  --church-gold: #D4AF37;
+  --church-light-blue: #E6F3FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.church-gradient {
+  background: linear-gradient(135deg, var(--church-blue) 0%, #1e40af 50%, var(--church-brown) 100%);
+}
+
+.church-text-gradient {
+  background: linear-gradient(135deg, var(--church-blue), var(--church-brown));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(212, 175, 55, 0.6); }
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll-bounce 2s infinite;
+}
+
+@keyframes scroll-bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+  40% { transform: translateX(-50%) translateY(-10px); }
+  60% { transform: translateX(-50%) translateY(-5px); }
+}
+
+.section-divider {
+  background: linear-gradient(90deg, transparent, var(--church-gold), transparent);
+  height: 2px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 47, 108, 0.2);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.announcement-bar {
+  background: linear-gradient(90deg, var(--church-gold), #f59e0b, var(--church-gold));
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.ministry-card {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border: 1px solid rgba(0, 47, 108, 0.1);
+  transition: all 0.3s ease;
+}
+
+.ministry-card:hover {
+  background: linear-gradient(145deg, #f8fafc, #ffffff);
+  border-color: var(--church-blue);
+  transform: translateY(-5px);
+}
+
+.prayer-wall-item {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(230, 243, 255, 0.9));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 47, 108, 0.1);
+}
+
+.donation-progress {
+  background: linear-gradient(90deg, var(--church-gold), #f59e0b);
+  border-radius: 10px;
+  height: 8px;
+  transition: width 0.5s ease;
+}
+
+.live-indicator {
+  background: #ef4444;
+  animation: live-pulse 1.5s infinite;
+}
+
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.sermon-card {
+  background: linear-gradient(145deg, #ffffff, #f1f5f9);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.sermon-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 47, 108, 0.15);
+}
+
+.footer-gradient {
+  background: linear-gradient(135deg, var(--church-blue) 0%, #1e3a8a 50%, var(--church-brown) 100%);
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(5px);
+  }
+}
